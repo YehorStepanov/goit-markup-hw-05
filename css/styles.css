@@ -740,10 +740,12 @@ address {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  margin-bottom: 16px;
+  background-color: transparent;
+  resize: none;
+  padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus,
@@ -762,12 +764,34 @@ address {
   align-items: center;
   margin-bottom: 24px;
 }
+
+.pricy-policy{
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.check-icon{
+  
+}
 .form-checkbox {
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+}
+
+.form-checkbox:checked .pricy-policy {
+  background-color:#404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .form-group-checkbox .form-text {
   margin: auto 0px;
