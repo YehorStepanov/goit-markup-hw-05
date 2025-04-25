@@ -683,7 +683,6 @@ address {
   margin-bottom: 8px;
 }
 .form-text {
-  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -733,10 +732,7 @@ address {
   border-radius: 4px;
   width: 100%;
   height: 120px;
-  padding-left: 36px;
-  padding-right: 36px;
-  padding-top: 8px;
-  outline: none;
+  outline: transparent;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -765,20 +761,21 @@ address {
   margin-bottom: 24px;
 }
 
-.pricy-policy{
+.pricy-policy {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
 }
 
-.check-icon{
-  
+.check-icon {
 }
 .form-checkbox {
   width: 16px;
@@ -788,8 +785,8 @@ address {
   margin-right: 8px;
 }
 
-.form-checkbox:checked .pricy-policy {
-  background-color:#404bbf;
+#user-privacy:checked ~ .form-text .pricy-policy {
+  background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
@@ -798,5 +795,11 @@ address {
 }
 
 .form-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #4D5AE5;
   text-decoration: underline;
 }
