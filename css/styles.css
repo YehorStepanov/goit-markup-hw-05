@@ -530,6 +530,10 @@ address {
   gap: 24px;
 }
 
+.subscribe-label{
+  width: 264px;
+  height: 40px;
+}
 .subscribe-input {
   border: 1px solid #ffffff;
   border-radius: 4px;
